@@ -1,0 +1,214 @@
+/* ── Synthwave Theme ── */
+
+Screen {
+    background: $background;
+}
+
+Header {
+    background: $panel;
+    color: $secondary;
+    text-style: bold;
+}
+
+Footer {
+    background: $panel;
+}
+
+#main-container {
+    height: 1fr;
+}
+
+#doc-pane {
+    width: 70%;
+    border-right: thick $accent;
+    padding: 1 2;
+}
+
+#comment-pane {
+    width: 30%;
+    padding: 1;
+    background: $surface;
+}
+
+#panel-header {
+    text-style: bold;
+    color: $secondary;
+    padding: 1 0;
+    border-bottom: heavy $accent;
+    margin-bottom: 1;
+}
+
+#comment-list {
+    height: 1fr;
+}
+
+/* ── Markdown block highlighting ── */
+
+MarkdownBlock.selected {
+    background: $accent 20%;
+    border-left: thick $primary;
+    padding-left: 1;
+}
+
+MarkdownBlock.commented {
+    border-left: thick $secondary;
+    padding-left: 1;
+}
+
+MarkdownBlock:hover {
+    background: $accent 10%;
+}
+
+/* ── Comment cards ── */
+
+CommentCard {
+    background: $panel;
+    border: round $accent;
+    margin: 1 0;
+    padding: 1;
+    height: auto;
+}
+
+CommentCard:hover {
+    border: round $primary;
+}
+
+CommentCard .status-badge {
+    color: $secondary;
+    text-style: bold;
+}
+
+CommentCard .anchor-preview {
+    color: $text-muted;
+    text-style: italic;
+    max-height: 2;
+    overflow: hidden;
+}
+
+CommentCard .comment-body {
+    margin: 1 0;
+    color: $text;
+}
+
+CommentCard .comment-actions {
+    height: 3;
+    align: right middle;
+}
+
+CommentCard .comment-actions Button {
+    margin: 0 1;
+}
+
+/* ── Buttons ── */
+
+Button {
+    background: $panel;
+    border: tall $accent;
+    color: $text;
+}
+
+Button:hover {
+    background: $accent 30%;
+    border: tall $primary;
+}
+
+Button.-primary {
+    background: $primary 30%;
+    border: tall $primary;
+    color: $text;
+    text-style: bold;
+}
+
+Button.-primary:hover {
+    background: $primary 50%;
+}
+
+Button.-error {
+    background: $error 20%;
+    border: tall $error;
+    color: $text;
+}
+
+Button.-error:hover {
+    background: $error 40%;
+}
+
+Button.-success {
+    background: $success 20%;
+    border: tall $success;
+    color: $text;
+    text-style: bold;
+}
+
+Button.-success:hover {
+    background: $success 40%;
+}
+
+/* ── Modal dialogs ── */
+
+CommentInputScreen, DiffViewScreen, ConfirmDeleteScreen {
+    align: center middle;
+    background: $background 80%;
+}
+
+#comment-dialog, #diff-dialog, #confirm-dialog {
+    width: 80%;
+    max-width: 100;
+    height: auto;
+    max-height: 80%;
+    background: $surface;
+    border: thick $accent;
+    padding: 2;
+}
+
+.dialog-title {
+    text-style: bold;
+    text-align: center;
+    color: $primary;
+    margin-bottom: 1;
+}
+
+.dialog-label {
+    color: $secondary;
+}
+
+.block-preview {
+    background: $panel;
+    padding: 1;
+    margin: 1 0;
+    max-height: 5;
+    overflow: hidden;
+    border-left: thick $accent;
+}
+
+.explanation {
+    margin: 1 0;
+    padding: 1;
+    background: $panel;
+    border-left: thick $secondary;
+    color: $text;
+}
+
+#comment-input {
+    height: 8;
+    margin: 1 0;
+    border: tall $accent;
+}
+
+#diff-display {
+    height: 1fr;
+    min-height: 10;
+    border: solid $accent;
+    margin: 1 0;
+    background: $panel;
+}
+
+.dialog-buttons {
+    height: 3;
+    align: center middle;
+    margin-top: 1;
+}
+
+.dialog-buttons Button {
+    margin: 0 2;
+}
